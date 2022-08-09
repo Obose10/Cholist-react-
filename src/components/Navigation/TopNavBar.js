@@ -40,20 +40,23 @@
 
 import React from 'react';
 import './TopNavBar.css';
+import { Link } from "react-router-dom";
+
 
 const TopNavBar = (props) => {
     return(
      <nav className="navbar">
-        <a className="active" href="#Home"><i class="fa fa-fw fa-home"></i> </a>
-        <a href="#Mail"><i className="fa-solid fa-envelope"></i></a>
+        <Link to='/home' ><i className="fa fa-fw fa-home"></i></Link>
+        <Link to="#Mail"><i className="fa-solid fa-envelope"></i></Link>
         <div className="searchContainer">
             <i className="fa fa-search searchIcon"></i>
             <input className="searchBox" type="search" name="search" placeholder="Search..." />
           </div>
-          <div className = "rear-icons">
-             <a href="#Alarm"><i className="fa-solid fa-bell"></i> </a>
-           <a  href="#Settings"><i className="fa-solid fa-gear"></i> </a>
-         </div>   
+          <div className="rear-icons">
+             <Link to="#Alarm"><i className="fa-solid fa-bell"></i> </Link>
+           <Link to="#Settings"><i className="fa-solid fa-gear"></i>  </Link >
+         </div>  
+        
      </nav>
     );
 };

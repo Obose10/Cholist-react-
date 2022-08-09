@@ -8,20 +8,29 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Services from './pages/Services/Services'
 
+
 function App() {
   return (
     <div className='App'>
      <TopNavBar />
+     
      <div className='partition'>
       <div className="sideNav">
         <SideNavBar />
       </div>
       <div className="mainNav">
-        <Routes>
+        <Routes className='sidenavroutes'>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />} />
           </Routes>
+
+          {/* <Routes className='Topavroutes'>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="services" element={<Services />} />
+          </Routes> */}
+
       </div>
      </div>
 

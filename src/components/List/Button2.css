@@ -1,0 +1,33 @@
+.add-btn{
+    /* width: 100px; */
+    cursor: pointer;
+    background-color:  #841212;
+    border: 2px solid #841212;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    /* margin-top: 20px; */
+    width: 80px;
+    margin-left: 10px;
+}
+
+.full-state{
+    padding: 0px;
+    /* margin-top: -10px; */
+    margin-top: 90px;
+    margin-left: 20px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.fa-trash-can{
+    color: red;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
